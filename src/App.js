@@ -6,6 +6,7 @@ import ContentGrid from './components/ContentGrid';
 import Newsletter from './components/Newsletter';
 import Profile from './components/Profile';
 
+
 function App() {
   return (
     <div >

@@ -26,7 +26,7 @@ const Navbar=()=>{
             <h1 className='w-full text-3xl font-bold text-[#ce8fc3] m-4'>MaidCorp</h1>
                 <ul className=" uppercase p-3">
                     <li className='p-3 border-b border-gray-600'>Home</li>
-                    <li className='p-3 border-b border-gray-600'>Servdsices</li>
+                    <li className='p-3 border-b border-gray-600'>Services</li>
                     <li className='p-3 border-b border-gray-600'>About</li>
                     <li className='p-3' >Contact </li>
                 </ul>

@@ -12,7 +12,7 @@ const Newsletter=()=>{
                 <h1 className="pb-10 text-2xl text-[#ffffff]">Stay up to date with our news letter</h1>
                 <div>
                     <input 
-                        className=" pl-3 rounded-md w-[800px] h-[35px] mr-10 focus-within:before: text-black
+                        className=" pl-3 rounded-md w-[800px] h-[35px] mr-10 focus-within:before:first-letter: text-black
                         " 
                         type="text" 
                         width={40}
