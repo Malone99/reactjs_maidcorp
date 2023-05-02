@@ -5,6 +5,7 @@ import Content from './components/Content';
 import ContentGrid from './components/ContentGrid';
 import Newsletter from './components/Newsletter';
 import Profile from './components/Profile';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
      <ContentGrid/>
      <Newsletter/>
      <Profile/>
+     <Footer/>
     </div>
   );
 }
