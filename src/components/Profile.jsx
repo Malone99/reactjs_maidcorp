@@ -1,11 +1,4 @@
 import React from "react";
-import {
-    Card,
-    CardHeader,
-    CardBody,
-    CardFooter,
-    Typography,
-  } from "@material-tailwind/react";
   import CleaningImg2 from "../images/cleaning2.jpg"
 const Profile=()=>{
     return(
