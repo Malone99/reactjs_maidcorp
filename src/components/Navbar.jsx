@@ -14,7 +14,7 @@ const Navbar=()=>{
     return(
         <div className=' flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-white'>
             <h1 className='w-full text-3xl font-bold text-[#ce8fc3]'>MaidCorp</h1>
-            <ul className={nav?"flex ease-in-out duration-500 " :" fixed left-[-100%]"}>
+            <ul className={nav?"flex ease-in-out duration-500  " :" fixed left-[-100%]"}>
                 <li className='p-3'>Home</li>
                 <li className='p-3'>Services</li>
                 <li className='p-3 hover:text-pink-400'><Link to={'/login'}>About</Link></li>

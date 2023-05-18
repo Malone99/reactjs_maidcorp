@@ -3,6 +3,8 @@ import CleaningImg from "../images/cleaning.jpg"
 import {FcGoogle} from "react-icons/fc"
 
 const Login=(props)=>{
+
+
     return(
         <div className="grid grid-cols-1 sm:grid-cols-2 h-screen w-full">
             <div className="bg-white">

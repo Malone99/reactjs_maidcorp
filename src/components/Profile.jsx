@@ -1,5 +1,5 @@
 import React from "react";
-  import CleaningImg2 from "../images/cleaning2.jpg"
+import CleaningImg2 from "../images/cleaning2.jpg"
 const Profile=()=>{
     return(
         <div className=" bg-white w-full py-44 px-4">
