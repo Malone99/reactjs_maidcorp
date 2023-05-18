@@ -85,14 +85,14 @@ const Signup=()=>{
                         size="lg" 
                         label="First Name"
                         onChange={(e)=>{setFirstName(e.target.value)}} />
-                    {valid? <></>:<>{errorMsg}</> }
+                    {valid && firstName.length<=0? <></>:<label className="text-red-600">{errorMsg}</label> }
                     <Input 
                          className="text-black" 
                          size="lg" 
                          label="Last Name"
                          value={lastName}
                          onChange={(e)=>{setLastName(e.target.value)}}   />
-                         {err && lastName.length<=0? <label>Enter Last name</label>: "" }
+                         {err && lastName.length<=0? <label className="text-red-600">Enter Last name*</label>: "" }
                     <Input 
                         className="text-black"  
                         size="lg" 
