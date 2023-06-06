@@ -1,4 +1,5 @@
 import React,{useEffect,useState} from "react";
+import {AiFillEdit} from 'react-icons/ai'
 
 const MaidList=({list})=>{
 
@@ -23,10 +24,10 @@ const MaidList=({list})=>{
                                 list.map((item)=>(
                                     <tr key={item.id}>
                                         <td className="whitespace-nowrap px-6 py-4 font-medium">{item.id}</td>
-                                        <td className="whitespace-nowrap px-6 py-4 font-semibold">{item.firstName}</td>
-                                        <td className="whitespace-nowrap px-6 py-4 font-semibold">{item.lastName}</td>
-                                        <td className="whitespace-nowrap px-6 py-4 font-semibold">{item.address.street}</td>
-                                        
+                                        <td className="whitespace-nowrap px-6 py-4 font-">{item.firstName}</td>
+                                        <td className="whitespace-nowrap px-6 py-4 font-">{item.lastName}</td>
+                                        <td className="whitespace-nowrap px-6 py-4 font-">{item.address.street}</td>
+                                        <td><button><AiFillEdit size={20} className="hover:bg-blue-600"/></button></td>
                                     </tr>
                                 ))
                             }

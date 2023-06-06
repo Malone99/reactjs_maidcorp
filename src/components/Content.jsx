@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import Typed from 'react-typed';
+import { Link } from "react-router-dom";
 
 const Content=(props)=>{
     return (
@@ -13,7 +14,9 @@ const Content=(props)=>{
                 backSpeed={50} loop>
             </Typed>
             <div>
-            <button className="border-r-4 shadow-xl bg-[#ce8fc3] rounded-md text-xl  w-[200px] h-[40px]">Browse</button>
+            <button className="border-r-4 shadow-xl bg-[#ce8fc3] rounded-md text-xl  w-[200px] h-[40px]"><Link to={'/signup'}>
+                Brower
+                </Link></button>
             </div>
             </div>    
         </div>

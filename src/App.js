@@ -5,6 +5,14 @@ import Home from './components/Home';
 import { Route, Routes } from 'react-router-dom';
 import Signup from './components/Signup';
 import MaidList from './components/MaidList';
+import DashboardSideBar from './components/DashboardSideBar';
+import Dashboard from './pages/Dashboard';
+import SearchBar from './components/SearchBar';
+import Navigation from './components/Navigation';
+import About from './components/About';
+import Footer from './components/Footer';
+
+
 
 
 
@@ -32,13 +40,18 @@ function App() {
      <Newsletter/>
      <Profile/>
      <Footer/> */}
+     <Navigation/>
      <Routes>
         <Route  path='/'  element={<Home/>}/>
         <Route path='/login'  element={<Login/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/maidlist' element={<MaidList list={data} />}/>
+        <Route path='/dash' element={<DashboardSideBar/>}/>
+        <Route path='/dashboard' element={<Dashboard/>}/>
+        <Route path='/nav' element={<Navigation/>}/>
+        <Route path='/about' element={<About/>}/>
      </Routes>
-     
+     <Footer/>
     </div>
   );
 }

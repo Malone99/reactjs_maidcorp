@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 import Login from "./Login";
 import { Link } from "react-router-dom";
+import NavLinks from "./NavLinks";
 
 const Navbar=()=>{
 
@@ -16,9 +17,10 @@ const Navbar=()=>{
             <h1 className='w-full text-3xl font-bold text-[#ce8fc3]'>MaidCorp</h1>
             <ul className={nav?"flex ease-in-out duration-500  " :" fixed left-[-100%]"}>
                 <li className='p-3'>Home</li>
-                <li className='p-3'>Services</li>
+                {/* <li className='p-3'>Services</li>
                 <li className='p-3 hover:text-pink-400'><Link to={'/login'}>About</Link></li>
-                <li className='p-3' >Contact </li>
+                <li className='p-3' >Contact </li> */}
+                
             </ul>
             <div onClick={handleNav}>
                 {!nav?<AiOutlineClose size={20}/>: <AiOutlineMenu size={20}/>}
