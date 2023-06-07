@@ -27,7 +27,7 @@ const NavLinks=()=>{
 
                                         </div>
                                     </div>
-                                    <div className="bg-slate-500 p-2 ">
+                                    <div className="bg-white p-2 ">
                                         {link.sublink.map((mysublink)=>(
                                             <div>
                                                 <h1 className="text-lg ">{mysublink.Head}</h1>

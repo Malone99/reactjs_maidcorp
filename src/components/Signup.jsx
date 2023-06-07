@@ -36,7 +36,7 @@ const Signup=()=>{
         console.log("valid ?-->"+valid);
 
         const isValidSurname=nameRegex.test(lastName);
-        if(lastName.length==0|| isValidSurname )
+        if(lastName.length===0|| isValidSurname )
         setErr(true); 
         else
         setErr(false);
@@ -64,14 +64,11 @@ const Signup=()=>{
 
 
    return(
-    <div className="bg-slate-800 object-cover h-full w-full grid grid-cols-1 flex-col justify-items-center mt-16 -mt-6">
-        <Card className="bg-slate-800 object-cover h-full w-full grid grid-cols-1 flex-col justify-items-center mt-16 " color="transparent" shadow={false}>
-            <Typography className=" text-white" variant="h4" color="blue-gray">
+    <div className=" bg-indigo-900 object-cover h-full w-full grid grid-cols-1 flex-col justify-items-center mt-16 -mt-6">
+        <Card className="bg-indigo-900 object-cover h-full w-full grid grid-cols-1 flex-col justify-items-center mt-16 " color="transparent" shadow={false}>
+            <Typography className=" text-white flex" variant="h4" color="blue-gray">
             Sign Up
-            </Typography>
-            <Typography className="text-[#ce8fc3] flex  font-bold text-2xl justify-self-stretch -mt-16" variant="h4" color="blue-gray">  
-            MaidCorp
-            <img className="h-8" src="https://img.icons8.com/ios/50/null/housekeeper-female.png"/>
+            <img className="h-8" src="https://img.icons8.com/ios/50/null/housekeeper-female.png" alt="logo"/>
             </Typography>
             <Typography color="gray" className="mt-1 font-normal  text-white">
             Enter your details to register.
@@ -81,26 +78,26 @@ const Signup=()=>{
                     <Input 
                         type="text"
                         value={firstName} 
-                        className="text-black" 
+                        className="text-white" 
                         size="lg" 
                         label="First Name"
                         onChange={(e)=>{setFirstName(e.target.value)}} />
                     {valid && firstName.length<=0? <></>:<label className="text-red-600">{errorMsg}</label> }
                     <Input 
-                         className="text-black" 
+                         className="text-white" 
                          size="lg" 
                          label="Last Name"
                          value={lastName}
                          onChange={(e)=>{setLastName(e.target.value)}}   />
                          {err && lastName.length<=0? <label className="text-red-600">Enter Last name*</label>: "" }
                     <Input 
-                        className="text-black"  
+                        className="text-white"  
                         size="lg" 
                         label="Email"
                         value={email}
                         onChange={(e)=>{setemail(e.target.value)}} />
                     <Input 
-                        className="text-black" 
+                        className="text-white" 
                         type="password" 
                         size="lg" 
                         label="Password"

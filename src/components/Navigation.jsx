@@ -1,14 +1,19 @@
 import React from "react";
-import Navbar from "./Navbar";
 import NavLinks from "./NavLinks";
 import GetStarted from "./Getstarted";
+import {
+    Typography
+  } from "@material-tailwind/react";
 
 const Navigation=()=>{
 
     return(
-        <nav className="bg-white">
+        <nav className="bg-white h-20">
             <div className="flex items-center justify-around ">
-                <div className="z-50">
+                <div className="z-50 flex">
+                <Typography className="text-[#ce8fc3] " variant="h4" color="blue-gray">  
+                    MaidCorp
+            </Typography>
                     <img src="https://img.icons8.com/ios/50/null/housekeeper-female.png" 
                          alt="logo"
                          className="md:cursor-pointer h-9"/>
