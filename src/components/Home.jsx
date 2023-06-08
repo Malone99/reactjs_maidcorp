@@ -5,14 +5,18 @@ import Newsletter from "./Newsletter";
 import Profile from "./Profile";
 
 
-const Home=()=>(
-    <div className="bg-[#000300]">
-       
-        <Content />
-        <ContentGrid />
-        <Newsletter />
-        <Profile />
-        
-    </div>
-)
+const Home = () => {
+    return (<>
+        <div className="bg-[#000300]">
+
+            <Content/>
+            <ContentGrid/>
+            <Newsletter/>
+            <Profile/>
+
+        </div>
+    </>)
+}
+
+
 export default Home;

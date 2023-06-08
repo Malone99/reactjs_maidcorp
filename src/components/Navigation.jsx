@@ -4,6 +4,7 @@ import GetStarted from "./Getstarted";
 import {
     Typography
   } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const Navigation=()=>{
 
@@ -12,8 +13,8 @@ const Navigation=()=>{
             <div className="flex items-center justify-around ">
                 <div className="z-50 flex">
                 <Typography className="text-[#ce8fc3] " variant="h4" color="blue-gray">  
-                    MaidCorp
-            </Typography>
+                    <Link to={'/'}>MaidCorp</Link>
+                </Typography>
                     <img src="https://img.icons8.com/ios/50/null/housekeeper-female.png" 
                          alt="logo"
                          className="md:cursor-pointer h-9"/>
@@ -24,9 +25,7 @@ const Navigation=()=>{
                     </li>
                     <NavLinks/>
                 </ul>
-                <div className=" md:block hidden ">
-                    <GetStarted/>
-                </div>
+                
                 {/* mobile nav */}
                 <ul className="md:hidden absolute  w-full h-full bottom-0 pl-4">
                     <li >

@@ -6,7 +6,7 @@ import FadeIn from "./animations/FadeIn";
 
 const About =()=>{
     const msg="Welcome to MaidCorp -"+
-                " Your Trusted Cleaning Partner"+
+                " Your Trusted Cleaning Partner"
                 +"At MaidCorp, we understand the importance of a clean and organized living space. We are a dedicated team of"
                 +" experienced professionals providing top-notch cleaning services tailored to meet your specific needs. Whether you require a regular clean to maintain cleanliness, a thorough spring clean to freshen up your home,"
                 +"or a comprehensive full clean for a deep and detailed transformation, we have you covered";
